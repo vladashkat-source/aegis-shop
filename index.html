@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Aegis Shop — предмети Dota 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site">
+ 
+  <header class="head">
+    <a class="logo" href="#"><img src="logo.png" alt="Aegis Shop"></a>
+    <nav><a href="#catalog">Каталог</a><a href="#inv">Інвентар<b id="cnt">0</b></a></nav>
+  </header>
+ 
+  <section class="hero">
+    <div>
+      <h1>Збери білд для своєї гри</h1>
+      <a class="cta" href="#catalog">До каталогу</a>
+    </div>
+    <div class="ph" aria-hidden="true">RAD</div>
+  </section>
+ 
+  <section class="catalog" id="catalog"><div class="grid" id="grid"></div></section>
+ 
+  <section class="inv" id="inv">
+    <h2>Інвентар</h2>
+    <div class="slots" id="slots"></div>
+    <div class="total"><span id="sum">Разом: 0 ₴</span><button class="buy" id="order" disabled>купити</button></div>
+  </section>
+ 
+  <footer>
+    © 2026 Aegis Shop не пов’язаний з Valve.
+  </footer>
+</div>
+ 
+<script type="module" src="app.js"></script>
+</body>
+</html>
